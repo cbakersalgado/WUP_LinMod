@@ -79,17 +79,29 @@ plot(SIMS~GRIP,data=data)
 
 ### Numerical results (cor)
 
-`
+These results show the correlation between grip and strength and the simulation. The correlation between stimulation and grip strength is about 0.64 while arm and simulation strength is 0.69. Both are positive correlations.`
   
 ### Inferential  (Build 2-dimentional model.3)
 
+summary.lm(model.3)
+
 #### predict model.3 at target point
   
+predict(model.3, TargtPoint, interval-'prediction')
+The SIMS score predicted is 0.15, the interval prediction is -2.13 and 2.43.
 
 ## Comparing nested models ANOVA Test
 
+anova(model.1, model.3) , anova(model.2, model.3)
+
 ### Model.1 vs Model.3
+
+The model shows that there is a difference between the two due to the P-value being less than 0.05.
+
 ### Model.2 vs Model.3
+
+There is a difference between model.2 and model.3  as the P-value is lower than 0.05.
 
 ## Informally compare Model.1 with model.2
 
+Model.1 (SIMS~ARM) is best in comparison to model.2 (SIMS~GRIP) because model.1's residual was lower than model.2. 
