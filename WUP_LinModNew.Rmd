@@ -100,7 +100,7 @@ The model shows that there is a difference between the two due to the P-value be
 
 ### Model.2 vs Model.3
 
-There is a difference between model.2 and model.3  as the P-value is lower than 0.05.
+There is a difference between model.2 and model.3  as the P-value is lower than 0.05. 
 
 ## Informally compare Model.1 with model.2
 
