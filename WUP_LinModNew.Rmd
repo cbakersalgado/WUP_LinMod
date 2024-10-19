@@ -43,13 +43,15 @@ The correlation is positive, ARM strength increase means that SIMS increases as 
 
 ### Inferential  (Build model.1)
 
-summary.lm(model.l) 
+summary.lm(model.1) 
 
 #### Predict at target point
 
+targtPoint = data.frame(GRIP=94, ARM=88)
 
 #### scatterplot with model fit
   
+plot(SIMS~ARM,data=data)
 
 ## Model 2 SIM~GRIP
 
