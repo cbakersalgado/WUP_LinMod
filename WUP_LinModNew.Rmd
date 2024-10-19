@@ -57,18 +57,23 @@ plot(SIMS~ARM,data=data)
 
 ### Now add in scatterplot
 
+plot(SIMS~GRIP,data=data)
 
 ### Numerical results 
 
+There is a positive correlation between the increase of both GRIP and SIMS
 
 ### Inferential  (Build model.2)
-  
+
+summary.lm(model.2)  
 
 #### predict model.2 at target point
 
+targtPoint = data.frame(grip=94, ARM=88)
+
 #### now add the model fit to our plot for model.2
   
-
+plot(SIMS~GRIP,data=data)
 
 ## Model 3 SIM~ARM+GRIP
 
